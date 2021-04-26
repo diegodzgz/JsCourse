@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40em;
+    width: 88%;
+    background: linear-gradient(to right, rgb(41, 128, 185), rgb(109, 213, 250), rgb(255, 255, 255));
+    font-family: Poiret One;
+}
+
+/**
+ * Add box sizing to everything
+ * @link http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/**
+ * Layout
+ */
+
+.row {
+    margin-left: -1.4%;
+    margin-right: -1.4%;
+}
+
+.grid,
+.grid {
+    float: left;
+    padding-left: 1.4%;
+    padding-right: 1.4%;
+    width: 100%;
+}
+
+.grid-content {
+    width: 45%;
+}
+
+.grid-equals {
+    width: 10%;
+}
+
+.row:before,
+.row:after {
+    display: table;
+    content: " ";
+}
+
+.row:after {
+    clear: both;
+}
+
+/**
+ * Forms
+ */
+ 
+input {
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    width: 100%;
+}
+
+label {
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+    display: block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    width: 100%;
+}
+
+/**
+ * Utilities
+ */
+.font-big {
+    font-size: 1.2em;
+}
+
+.padding {
+    padding: 0.5em 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+        /* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+.title{
+    text-align: -webkit-center;
+}
+
+.titleTemp{
+
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.widget {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  height: 300px;
+  width: 600px;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
+    0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+  .weatherIcon {
+    flex: 1 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #fafafa;
+    font-family: weathericons;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 100px;
+    }
+
+    i {
+      padding-top: 30px;
+    }
+
+  .weatherInfo {
+    flex: 0 0 70%;
+    height: 40%;
+    background: #080705;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    }
+
+    .temperature {
+      flex: 0 0 40%;
+      width: 100%;
+      font-size: 30px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .description {
+      flex: 0 60%;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+    }
+      .weatherCondition {
+        text-transform: uppercase;
+        font-size: 35px;
+        font-weight: 100;
+      }
+
+      .place {
+        font-size: 15px;
+      }
+    
+
+  .date {
+    flex: 0 0 30%;
+    height: 40%;
+    background: #70c1b3;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+
+
+  a {
+    text-decoration: none;
+    color: #e4d6a7;
+    font-size: 10px;
+  }
+
